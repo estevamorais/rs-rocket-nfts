@@ -1,0 +1,11 @@
+:root {
+  --color-body: #0e0e0e;
+  --color-primary: #ff5b50;
+  --color-primary-hover: #db4237;
+  --color-card: #252525;
+  --color-text-light: #fff;
+  --color-text-dark: #000;
+  --color-subtitle: #5a5757;
+  --color-input: #0D0D0D;
+  --font-family: 'Montserrat', sans-serif;
+}

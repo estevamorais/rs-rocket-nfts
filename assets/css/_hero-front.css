@@ -1,0 +1,134 @@
+.hero-front {
+  padding: 4rem 0;
+  color: var(--color-text-light);
+}
+
+.hero-front__content {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-front__content {
+    grid-template-columns: 1.5fr 2.5fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+.hero-front__highlighted {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .hero-front__highlighted {
+    order: -1;
+  }
+}
+
+.hero-front__subtitle {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.hero-front__selected-artists {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width:768px) {
+  .hero-front__selected-artists {  
+    margin-top: 3rem;
+    zoom: .9;
+  }
+}
+
+.hero-front__selected-artists img {
+  height: 5.1rem;
+  width: 5.1rem;
+  position: absolute;
+  top: 0;
+}
+
+.hero-front__selected-artists div {
+  display: flex;
+  position: relative;
+  height: 5.1rem;
+  width: 8.925rem;
+}
+
+.hero-front__selected-artists img:nth-child(1) {
+  z-index: 4;
+}
+
+.hero-front__selected-artists img:nth-child(2) {
+  z-index: 3;
+  left: 1.275rem;
+}
+
+.hero-front__selected-artists img:nth-child(3) {
+  z-index: 2;
+  left: 2.55rem;
+}
+
+.hero-front__selected-artists img:nth-child(4) {
+  z-index: 1;
+  left: 3.55rem;
+}
+
+.hero-front__selected-artists p {
+  font-size: 1.1rem;
+}
+
+.hero-front__selected-artists p span {
+  display: block;
+  font-weight: bold;
+}
+
+.hero-front__title {
+  font-size: 2.325rem;
+}
+
+@media (max-width: 768px) {
+  .hero-front__title {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-front__title {
+    font-size: 3.125rem;
+  }
+}
+
+.hero-front__title span {
+  color: var(--color-primary);
+}
+
+@media (max-width: 998px) {
+  .hero-front__badge {
+    display: none;
+  }
+}
+
+.hero-front__gallery {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+@media (min-width: 768px) {
+  .hero-front__gallery {
+    padding-top: 7rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.hero-front__gallery img {
+  border: solid 1px #fff;
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-body);
+  color: var(--text-light);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: ease-in-out 200ms;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1275px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
